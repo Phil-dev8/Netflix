@@ -46,10 +46,15 @@ function App() {
         <li></li>
       </ul>
       <h2>{category[1]}</h2>
+      <ul></ul>
       <h2>{category[2]}</h2>
+      <ul></ul>
       <h2>{category[3]}</h2>
+      <ul></ul>
       <h2>{category[4]}</h2>
+      <ul></ul>
       <h2>{category[5]}</h2>
+      <ul></ul>
     </div>
   );
 }
