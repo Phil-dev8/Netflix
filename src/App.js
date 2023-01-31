@@ -1,23 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import netflix from "./netflix.json";
+//import Section from "./components/Section";
+
+const category = netflix.map((elem) => {
+  return elem.category;
+});
+console.log(category);
+
+const images = netflix.map((elem) => {
+  return elem.images;
+});
+console.log(images);
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h2>{category[0]}</h2>
+      <ul>
+        <li>{images[0]}</li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <h2>{category[1]}</h2>
+      <h2>{category[2]}</h2>
+      <h2>{category[3]}</h2>
+      <h2>{category[4]}</h2>
+      <h2>{category[5]}</h2>
     </div>
   );
 }
